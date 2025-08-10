@@ -12,3 +12,6 @@ jobs:
 
       - name: List
         run: ls -al
+
+      - name: build
+        run: ./gradlew assembleStandardRelease
