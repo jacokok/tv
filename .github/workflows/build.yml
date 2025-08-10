@@ -8,8 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: 
-          repository: Sam42a/DUNE/dune-main
-        
+          repository: Sam42a/DUNE
+          ref: dune-main
+          
       - uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
