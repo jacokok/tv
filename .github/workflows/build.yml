@@ -14,9 +14,12 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '21'
+          
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3          
 
       - name: build
-        run: ./gradlew assembleEnhancedRelease          
+        run: ./gradlew --no-daemon assembleEnhancedRelease          
 
       - name: List
         run: ls -al
