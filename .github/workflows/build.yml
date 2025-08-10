@@ -1,0 +1,14 @@
+name: Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: 
+          repository: Sam42a/DUNE
+
+      - name: List
+        run: ls -al
