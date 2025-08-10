@@ -16,7 +16,7 @@ jobs:
           java-version: '21'
 
       - name: build
-        run: ./gradlew assembleStandardRelease          
+        run: ./gradlew assembleEnhancedRelease          
 
       - name: List
         run: ls -al
