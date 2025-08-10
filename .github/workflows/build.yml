@@ -9,9 +9,7 @@ jobs:
       - uses: actions/checkout@v4
         with: 
           repository: Sam42a/DUNE
-          ref: dune-main
-          lfs: true
-          submodules: true
+          ref: Dune-main
           
       - uses: actions/setup-java@v4
         with:
